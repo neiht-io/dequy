@@ -1,0 +1,21 @@
+long  giaithua(int n)
+{
+    if (n == 0)
+        return 1 ;
+    if (n == 1)
+        return 1;
+    return n*giaithua(n - 1);
+}
+
+int main()
+{
+    int n, S;
+    printf("\Nhap n = "); 
+    scanf_s("%d", &n);
+
+    S = giaithua(n);
+    printf("S = %d", S);
+
+
+    return 0;
+}
